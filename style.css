@@ -254,7 +254,7 @@ section:hover .close-button{
 
 /*self*/
 .self{
-	padding:20px 0;
+	padding:10px 0;
 	background:#F7F7F7;
 }
 .qrcode{
@@ -277,11 +277,11 @@ section:hover .close-button{
 }
 .qrcode-img:hover img{
 	left:50%;
-	margin-left:-225px;
+	margin-left:-150px;
 	top:50%;
-	margin-top:-545px;
-	width:450px;
-	height:450px;
+	margin-top:-300px;
+	width:300px;
+	height:300px;
 	transform:rotate(360deg);
 }
 .prove-show{
