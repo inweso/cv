@@ -1,0 +1,136 @@
+@media(max-width:768px){/*ipad*/
+	html,body{
+		max-width:768px;
+	}
+	header, .main, .isay{
+		width:90%;
+	}
+	.point-five {
+		top: 530px!important;
+	}
+	.point-six {
+		display:none;
+	}
+}
+
+/*横屏*/
+@media(max-width:736px){/*iphone6P横屏*/
+	html,body{
+		max-width:736px;
+	}
+	@media(orientation : landscape){
+		.point-five {
+			top: 536px!important;
+		}
+	}
+	
+}
+
+@media(max-width:667px){/*iphone6横屏*/
+	html,body{
+		max-width:667px;
+	}
+	@media(orientation : landscape){
+		.point-five {
+			top: 562px!important;
+		}
+	}
+}
+
+@media(max-width:568px){/*iphone5横屏*/
+	html,body{
+		max-width:568px;
+	}
+	@media(orientation : landscape){
+		.point-five {
+			top: 586px!important;
+		}
+	}
+}
+
+@media(max-width:414px){/*iphone6p*/
+	html,body{
+		max-width:414px;
+	}
+	header{
+		margin-top:30px!important;
+	}
+	.logo{
+		bottom:none!important;
+		top:0;
+	}
+	.name{
+		width:100%!important;
+		text-align:center!important;
+		float:left!important;
+		margin-top:110px!important;
+	}
+	.big-point,
+	.small-point{
+		display:none;
+	}
+	.main{
+		background: none!important;
+	}
+	.contact{
+		width:100%!important;
+		float: left!important;
+		padding-left:24%;
+		margin-top:0!important;
+	}
+	.left,
+	.right{
+		width:100%!important;
+	}
+	.main section{
+		text-align: left;
+		padding-left:0!important;
+		padding-right:0!important;
+		margin-top:0!important;
+	}
+	.main .left .close-button {
+		left:100%!important;
+		margin-left:-18px;
+	}
+	.prove-show{
+		left:0!important;
+		bottom:100px!important;
+	}
+	.How-to-prove:hover + div{
+		width:90%!important;
+		height:120px!important;
+	}
+	.qrcode-img:hover img{
+		margin-left:-200px!important;
+		margin-top:-300px!important;
+		width:400px!important;
+		height:400px!important;
+	}
+}
+
+@media(max-width:375px){/*iphone6*/
+	html,body{
+		max-width:375px;
+	}
+	.contact {
+		padding-left: 22%;
+	}
+	.qrcode-img:hover img{
+		margin-left:-180px!important;
+		margin-top:-260px!important;
+		width:360px!important;
+		height:360px!important;
+	}
+}
+
+@media(max-width:320px){/*iphone5*/
+	.contact {
+		padding-left: 18%;
+	}
+	.qrcode-img:hover img{
+		margin-left:-150px!important;
+		margin-top:-260px!important;
+		width:300px!important;
+		height:300px!important;
+	}
+}

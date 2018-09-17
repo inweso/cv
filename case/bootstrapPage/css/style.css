@@ -1,0 +1,568 @@
+@import url("./font-icon.css");
+/*顶部样式*/
+.top-bar{
+	font-size:12px;
+	line-height:36px;
+	border-bottom:1px solid #AAA;
+}
+.top-bar span{
+	position:relative;
+	padding-right:8px;
+	padding-left:5px;
+	border-right:2px solid #CCC;
+}
+.top-bar span:last-child{
+	border-right:none;
+}
+.top-bar span i{
+	margin-right:3px;
+	-webkit-vertical-align:bottom;
+}
+.top-bar span:hover .QRcode{
+	display:block;
+}
+.bar-right{
+	text-align:right;
+}
+.QRcode{
+	position:absolute;
+	left:0;
+	top:26px;
+	width:96px;
+	height:96px;
+	display:none;
+	z-index:1;
+}
+
+/*导航栏*/
+nav{
+	margin:20px 0;
+}
+.logo{
+	height:60px;
+	width:auto;
+}
+.menu{
+	float:right;
+}
+.menu li{
+	float:left;
+	height:60px;
+	text-align:center;
+}
+.menu li a{
+	display:inline-block;
+	font-size:18px;
+	padding:5px 15px 0;
+	line-height:50px
+}
+.menu li a:hover,
+.menu li a.active{
+	border-bottom: 3px solid #dd3137;
+}
+.account{
+	background:url(../images/anonymous.jpg) no-repeat;
+	background-size:30%;
+	background-position: center left;
+	padding-left:25px;
+}
+li.account a:hover{
+	border-bottom:none;
+}
+
+/*移动菜单*/
+.mobile-menu .container .navbar-header{
+	margin:10px 0;
+}
+.navbar-nav {
+	margin: 0;
+}
+#mobile-menu-box{
+	background:#dd3137;
+	margin:10px -15px;
+	padding:0 15px;
+	text-align:center;
+}
+#mobile-menu-box li a{
+	font-size:18px;
+	padding:5px 15px 0;
+	line-height:35px;
+	color:#FFF;
+}
+#mobile-menu-box li a:hover{
+	color:#333;
+}
+
+/*轮播图*/
+.banner .item{
+	height:350px;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+/*公告*/
+.notice{
+	height:60px;
+	line-height: 60px;
+	border-bottom:1px solid #CCC;
+}
+.notice .text-right{
+	text-align:right;
+}
+
+/*优势*/
+.advantage,
+.info-data{
+	height:180px;
+	margin-top:20px;
+}
+.advantage .icon i{
+	display: block;
+	width:80px;
+	font-size:80px;
+	line-height: 80px;
+	color:#666;
+	transition:all 1s;
+	transform-origin: 50% 50%;
+}
+.advantage .icon:hover .icon-usd-barchart{
+	transform:rotateX(360deg);
+}
+.advantage .icon:hover .icon-usd{
+	transform:rotateY(360deg);
+}
+.advantage .icon:hover .icon-pay-square,
+.advantage .icon:hover .icon-insurance{
+	transform:rotateZ(360deg);
+}
+
+/*平台数据显示*/
+.info-data p{
+	margin-bottom:0;
+}
+.info-data h3{
+	margin-top: 5px;
+	font-size:25px;
+	color:#dd3137;
+}
+.info-data div:nth-child(3),
+.info-data div:nth-child(4){
+	margin-top:20px;
+}
+
+/*投资项目*/
+.main{
+	padding-top:30px;
+	background:#EEE;
+}
+.main h3{
+	font-weight: bold;
+	color:#FFF;
+	font-size:24px;
+	letter-spacing: 3px;
+}
+/*推荐投资项目*/
+.recommend,
+.sort{
+	height:260px;
+}
+.recommend .item-name{
+	height:260px;
+	text-align:center;
+	background: url(../images/apartment.png)  no-repeat;
+	background-size:cover;
+}
+.recommend .item-name h3{
+	padding:200px 0 0;
+	margin:0;
+}
+.item-content{
+	height:260px;
+	background:#FFF;
+}
+.item-content h2 span{
+	display: inline-block;
+	line-height: 20px;
+	font-size:13px;
+	color:#FFF;
+	background:#dd3137;
+	padding:2px 6px;
+	border-radius:10px;
+	vertical-align: top;
+	margin-left:10px;
+}
+.item-info{
+	text-align:center;
+	margin-top:20px;
+}
+.item-info div{
+	border-right:1px dashed #CCC;
+}
+.item-info div:last-child{
+	border-right:none;
+}
+.item-info .start{
+	border-right:none;
+}
+.start{
+	width:95px;
+	height:20px;
+	margin:20px auto;
+	background: url(../images/star-gray.png) no-repeat;
+}
+.start-active{
+	float:left;
+	display:inline-block;
+	height:100%;
+	background: url(../images/star-active.png) no-repeat;
+}
+.progress{
+	margin:20px auto 30px;
+	width:100px;
+	height:8px;
+	background:#FFF;
+	border:1px solid #475b66;
+	border-radius:3px;
+}
+.progress-bar{
+	background:#475b66;
+}
+a.invest-btn{
+	width:150px;
+	text-align: center;
+	margin:20px auto;
+	display:block;
+	padding:5px 0;
+	color:#FFF;
+	background:#dd3137;
+	border-radius:3px;
+}
+.rate,
+.time-limit,
+.money{
+	font-size:36px;
+}
+.rate span,
+.time-limit span,
+.money span{
+	font-size:14px;
+	padding-left:5px;
+}
+.rate{
+	color:#dd3137;
+}
+.mobile-QRcode{
+	float:right;
+	width:260px;
+	background: #FFF;
+	height:260px;
+}
+.mobile-QRcode-img p{
+	text-align:center;
+	font-size:12px;
+}
+.mobile-QRcode-bg{
+	width:230px;
+	margin:15px 0;
+	padding:0;
+	position:relative;
+}
+.mobile-QRcode-bg-text{
+	padding:15px 0 0 10px;
+	width:230px;
+	height:78px;
+	position:absolute;
+	top:0;
+	left:0;
+	color:#FFF;
+	text-align: left;
+}
+.mobile-QRcode-bg-text p:first-child{
+	font-size:18px;
+	margin-bottom:0;
+}
+.mobile-QRcode-img{
+	margin-top:10px;
+}
+/*短期投资项目*/
+.sort,
+.medium{
+	background:#FFF;
+ 	margin-top:30px;
+ }
+.item-name{
+	height:260px;
+	text-align:center;
+}
+ .sort .item-name{
+	background: url(../images/short.png) no-repeat;
+	background-size:cover;
+}
+ .medium .item-name{
+	background: url(../images/medium.png) no-repeat;
+	background-size:cover;
+}
+.sort h3,
+.medium h3{
+ 	padding-top:20px;
+ }
+.item-name span{
+	display: inline-block;
+	padding:1px 5px;
+	color:#FFF;
+	border-radius:10px;
+}
+.sort .item-name span{
+	background:#6fb2e0;
+}
+.medium .item-name span{
+	background:#da474b;
+}
+.link{
+	font-size:13px;
+	margin-top:126px;
+}
+.link a{
+	color:#FFF;
+}
+.bespeak{
+	float:left;
+}
+.more{
+	float: right;
+}
+.list{
+	padding:10px;
+}
+.list-sub{
+	position:relative;
+	border-right:1px dashed #CCC;
+}
+.list .list-sub:last-child{
+	border-right:none;
+}
+.list .title{
+	font-size:16px;
+	margin-bottom:0;
+	margin-top:10px;
+}
+.list .title-tag{
+	float:right;
+	text-align:center;
+	font-size:13px;
+	line-height:22px;
+	color:#666;
+	display: inline-block;
+	width:22px;
+	height:22px;
+	border:1px solid #666;
+	border-radius:50%;
+}
+.list-info{
+	margin:0 10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #CCC;
+}
+.list .rate,
+.list .time-limit{
+	color:#AAA;
+	margin-bottom:0;
+}
+.list .progress{
+	width:80px;
+}
+.list .start{
+	width:80px;
+	height:11px;
+	background-size:contain;
+}
+.list .start .start-active{
+	height:11px;
+	background-size:cover;
+	height
+}
+.list-info-2{
+	color:#AAA;
+	margin-top:25px;
+}
+.list-info-2 .progress{
+	margin: 10px auto 0;
+}
+.list-info-2 .start{
+	margin:28px auto 0;
+}
+.status{
+	position:absolute;
+	right:10px;
+	bottom:20px;
+	width: 80px;
+	height: 80px;
+	border:2px solid #dd3137;
+	border-radius:50%;
+	color:#dd3137;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	line-height: 80px;
+	transform: rotate(-45deg);
+}
+
+/*资讯*/
+.news{
+	background:#EEE;
+	padding-bottom:20px;
+}
+.news h2{
+	border-bottom:1px solid #CCC;
+	padding-bottom:5px;
+}
+.news-info,
+.news-top{
+	margin-top:30px;
+	background:#FFF;
+	height:320px;
+}
+.news-info h2 a,
+.news-top h2 a{
+	float:right;
+	font-size:16px;
+	color:#dd3137;
+}
+.news-info h3{
+	font-size:16px;
+}
+.news-info h3 a{
+	display: inline-block;
+	width:55%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+.news-info h3 span{
+	float:right;
+}
+.news-info ul li{
+	height:111px;
+}
+.news-info img{
+	float:left;
+	width:160px;
+	margin-right:10px;
+}
+.news-info p{
+	color:#AAA;
+}
+
+.news-top{
+	padding:1px 10px 0;
+}
+.news-top li a{
+	line-height: 30px;
+	font-size:16px;
+}
+
+/*底部*/
+footer{
+	color:#CCC;
+	background:#333;
+	padding:20px 0 30px;
+}
+footer i, footer a, footer a:link, footer a:hover, footer a:active, footer a:visited{
+	color:#CCC;
+}
+.tel-num{
+	display:inline-block;
+	padding:3px 10px;
+	color:#FFF;
+	font-size:25px;
+	border:1px solid #FFF;
+	letter-spacing:2px;
+	margin-bottom:5px;
+}
+.wechat-ico i{
+	position:relative;
+	margin-right:3px;
+}
+.wechat-ico i:hover img{
+	display:block;
+}
+.wechat-ico i img{
+	display:none;
+	position:absolute;
+	left:0;
+	top:15px;
+}
+footer dt{
+	font-size:16px;
+	color:#FFF;
+}
+footer dd{
+	line-height:32px;
+}
+.partner h3{
+	margin-top:0;
+}
+.partner li{
+	text-align: center;
+	background:#CCC;
+	margin:5px;
+	font-size:60px;
+	display:block;
+	width:70px;
+	height:70px;
+	float:left;
+}
+.partner li i{
+	padding-left:5px;
+	color:#666;
+}
+.partner li:hover i{
+	color:#dd3137;
+}
+.foot-menu{
+	margin-top:10px;
+	overflow: hidden;
+}
+.foot-menu li{
+	float:left;
+	margin-right:20px;
+}
+.foot-menu li a{
+	line-height: 40px
+}
+
+
+/*bootstrap补充*/
+/*移动菜单按钮*/
+.navbar-toggle .icon-bar{
+	background:#dd3137;
+}
+.container>.navbar-header{
+	margin:0;
+}
+
+/*轮播图圆点*/
+.banner .carousel-indicators{
+	bottom:0;
+}
+.banner .carousel-indicators li{
+	width:20px;
+	height:20px;
+	background:#FFF;
+	padding:3px;
+	margin:3px;
+	border:2px solid transparent;
+	background-clip:content-box;
+	vertical-align:middle;
+}
+.banner .carousel-indicators li.active{
+	width:15px;
+	height:15px;
+	border:2px solid #FFF;
+}
+
+/*左右控制器*/
+.banner .glyphicon::before{
+	display:none;
+}

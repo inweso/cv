@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+<div class="top-banner">
+	<div class="top-banner-max">
+		<a href="" target="_blank">
+			<img src="https://res.vmallres.com/pimages//sale/2018-05/20180530231225326.jpg" width="100%" height="auto" />
+		</a>
+		<a id="btn-close-max" class="button-topbanner" href="javascript:;" >-</a>
+	</div>
+	<div class="top-banner-min">
+		<a href="" target="_blank">
+			<img src="https://res.vmallres.com/pimages//sale/2018-05/20180516153706881.jpg" width="100%" height="auto" />
+		</a>
+		<a id="btn-close-min" class="button-topbanner" href="javascript:;" >×</a>
+	</div>
+</div><!-- 顶部banner结束 -->
+<div class="top">
+	<div class="top-menu">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">华为官网</a></li>
+			<li><a href="#">荣耀官网</a></li>
+			<li><a href="#">花粉俱乐部</a></li>
+			<li><a href="#">帮助中心</a></li>
+			<li><a href="#">V码（优购码）</a></li>
+			<li><a href="#">企业购</a></li>
+			<li><a href="#">Select Region</a></li>
+			<li>
+				<div class="dropdown"><a href="#"><span class="more">更多精彩</span><span class="menu-triangle triangle-down"></span></a>
+				<ul class="top-sub-menu">
+					<li><a href="#">EMUI</a></li>
+					<li><a href="#">应用市场</a></li>
+					<li><a href="#">华为终端云空间</a></li>
+					<li><a href="#">开发者联盟</a></li>
+					<li>
+						<a href="#"><img src="https://res.vmallres.com/appdownload/home/qrcode_vmall_new_app01.png?20170221" /></a>
+						<p>扫一扫，<a href="#">下载客户端</a></p>
+					</li>
+				</ul>
+				</div>
+			</li>
+		</ul>
+	</div><!-- 菜单结束 -->
+	<div class="user-login">
+		<ul>
+			<li><a href="#">登录</a></li>
+			<li><a href="#">注册</a></li>
+			<li><a href="#">我的订单</a></li>
+			<li><a href="#">购物车</a></li>
+		</ul>
+	</div>
+</div><!-- 顶部导航条结束-->
+
+<!-- 头部 -->
+<header>
+	<div class="logo">
+		<a href="#"><img src="https://res.vmallres.com/pimages//common/config/logo/logo20170801113951.png" /></a>
+	</div>
+	<div class="head-menu">
+		<ul>
+			<li><a href="#">华为专区</a></li>
+			<li><a href="#">荣耀专区</a></li>
+			<li><a href="#">HUAWEI P20</a></li>
+			<li><a href="#">荣耀V10</a></li>
+			<li><a href="#">nova3e</a></li>
+			<li><a href="#">荣耀10</a></li>
+		</ul>
+	</div>
+	<div class="search">
+		<form>
+			<input class="search-text" type="text" /><input class="search-btn" type="submit" value="搜索" />
+			<div class="search-key">
+				<span>HUAWEI P20</span>
+				<span>荣耀Play</span>
+			</div>
+		</form>
+	</div>
+</header><!-- 头部结束 -->
+
+<!-- 轮播图/分类 -->
+<div class="category">
+	<div class="banner">
+		<ul>
+			<li><a href="#" target="_blank"></a></li>
+			<li><a href="#" target="_blank"></a></li>
+			<li><a href="#" target="_blank"></a></li>
+			<li><a href="#" target="_blank"></a></li>
+			<li><a href="#" target="_blank"></a></li>
+			<li><a href="#" target="_blank"></a></li>
+		</ul>
+		<div class="banner-btn"></div>
+	</div><!-- 轮播图结束 -->
+
+	<div class="category-lists">
+		<ul>
+			<li>
+				<div class="category-info">
+					<div><a href="#">手机</a></div>
+					<a href="#">荣耀</a>
+					<a href="#">HUAWEI P系列</a>
+				</div>
+				<div class="category-panels">
+					<div class="sub-title"><a href="#"><span>浏览手机频道</span><span class="more">></span></a></div>
+					<div class="sub-lists">
+						<ul>
+							<li><a href="#">荣耀</a></li>
+							<li><a href="#">HUAWEI P系列</a></li>
+							<li><a href="#">荣耀畅玩系列</a></li>
+							<li><a href="#">HUAWEI Mate系列</a></li>
+							<li><a href="#">HUAWEI nova系列</a></li>
+							<li><a href="#">HUAWEI 麦芒系列</a></li>
+							<li><a href="#">华为畅享系列</a></li>
+							<li><a href="#">移动4G+专区</a></li>
+						</ul>
+					</div>
+					<div class="sub-pro">
+						<ul>
+							<li><a href="#"><img src="./images/pro1.jpg" /><p>HUAWEI Mate RS 保时捷设计</p><p class="price">¥9999</p></a></li>
+							<li><a href="#"><img src="./images/pro2.jpg" /><p>荣耀Play</p><p class="price">¥1999</p></a></li>
+							<li><a href="#"><img src="./images/pro3.jpg" /><p>HUAWEI P20</p><p class="price">¥3788</p></a></li>
+							<li><a href="#"><img src="./images/pro4.jpg" /><p>荣耀9i</p><p class="price">¥1399</p></a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="category-info">
+					<div><a href="#">笔记本&平板</a></div>
+					<a href="#">平板电脑</a>
+					<a href="#">笔记本电脑</a>
+				</div>
+				<div class="category-panels">
+					<div class="sub-title"><a href="#"><span>浏览笔记本&平板频道</span><span class="more">></span></a></div>
+					<div class="sub-lists">
+						<ul>
+							<li><a href="#">平板电脑</a></li>
+							<li><a href="#">笔记本电脑</a></li>
+							<li><a href="#">笔记本配件</a></li>
+						</ul>
+					</div>
+					<div class="sub-pro">
+						<ul>
+							<li><a href="#"><img src="./images/pro5.jpg" /><p>HUAWEI MateBook X Pro</p><p class="price">¥7988</p></a></li>
+							<li><a href="#"><img src="./images/pro6.jpg" /><p>荣耀MagicBook</p><p class="price">¥3999</p></a></li>
+							<li><a href="#"><img src="./images/pro7.jpg" /><p>华为平板 M5 8.4英寸</p><p class="price">¥2488</p></a></li>
+							<li><a href="#"><img src="./images/pro8.jpg" /><p>荣耀畅玩平板2 9.6英寸</p><p class="price">¥969</p></a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="category-info">
+					<div><a href="#">智能穿戴</a></div>
+					<a href="#">手环</a>
+					<a href="#">手表</a>
+					<a href="#">VR</a>
+				</div>
+				<div class="category-panels">
+					<div class="sub-title"><a href="#"><span>浏览智能穿戴频道</span><span class="more">></span></a></div>
+					<div class="sub-lists">
+						<ul>
+							<li><a href="#">手环</a></li>
+							<li><a href="#">手表</a></li>
+							<li><a href="#">VR</a></li>
+						</ul>
+					</div>
+					<div class="sub-pro">
+						<ul>
+							<li><a href="#"><img src="./images/pro9.jpg" /><p>荣耀手环3</p><p class="price">¥139</p></a></li>
+							<li><a href="#"><img src="./images/pro10.jpg" /><p>HUAWEI WATCH 2 Pro</p><p class="price">¥2588</p></a></li>
+							<li><a href="#"><img src="./images/pro11.jpg" /><p>荣耀畅玩手环 A2</p><p class="price">¥129</p></a></li>
+							<li><a href="#"><img src="./images/pro12.jpg" /><p>华为运动手环</p><p class="price">¥388</p></a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="category-info">
+					<div><a href="#">智能家居</a></div>
+					<a href="#">路由器</a>
+					<a href="#">电视盒子</a>
+					<a href="#">照明</a>
+				</div>
+				<div class="category-panels">
+					<div class="sub-title"><a href="#"><span>浏览智能家居频道</span><span class="more">></span></a></div>
+					<div class="sub-lists">
+						<ul>
+							<li><a href="#">路由器</a></li>
+							<li><a href="#">电视盒子</a></li>
+							<li><a href="#">照明</a></li>
+							<li><a href="#">清洁</a></li>
+							<li><a href="#">子母/分布式路由</a></li>
+							<li><a href="#">电力猫/wifi放大器</a></li>
+							<li><a href="#">随行wifi</a></li>
+							<li><a href="#">节能</a></li>
+							<li><a href="#">环境</a></li>
+							<li><a href="#">安防</a></li>
+							<li><a href="#">健康</a></li>
+							<li><a href="#">厨电</a></li>
+							<li><a href="#">影音</a></li>
+							<li><a href="#">卫浴</a></li>
+							<li><a href="#">其他</a></li>
+						</ul>
+					</div>
+					<div class="sub-pro">
+						<ul>
+							<li><a href="#"><img src="./images/pro13.jpg" /><p>荣耀分布式路由</p><p class="price">¥849</p></a></li>
+							<li><a href="#"><img src="./images/pro14.jpg" /><p>华为路由WS5100</p><p class="price">¥159</p></a></li>
+							<li><a href="#"><img src="./images/pro15.jpg" /><p>荣耀路由2</p><p class="price">¥179</p></a></li>
+							<li><a href="#"><img src="./images/pro16.jpg" /><p>华为路由 Q2</p><p class="price">¥799</p></a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="category-info">
+					<div><a href="#">通用配件</a></div>
+					<a href="#">移动电源</a>
+					<a href="#">耳机</a>
+					<a href="#">音箱</a>
+				</div>
+				<div class="category-panels">
+					<div class="sub-title"><a href="#"><span>浏览通用配件频道</span><span class="more">></span></a></div>
+					<div class="sub-lists">
+						<ul>
+							<li><a href="#">移动电源</a></li>
+							<li><a href="#">耳机</a></li>
+							<li><a href="#">音箱</a></li>
+							<li><a href="#">自拍杆/支架</a></li>
+							<li><a href="#">充电器/线材</a></li>
+							<li><a href="#">U盘/存储卡</a></li>
+							<li><a href="#">摄像机/镜头</a></li>
+							<li><a href="#">智能硬件</a></li>
+							<li><a href="#">生活周边</a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+					<div class="sub-pro">
+						<ul>
+							<li><a href="#"><img src="./images/pro17.jpg" /><p>华为10000mAh 移动电源  充电宝</p><p class="price">¥159</p></a></li>
+							<li><a href="#"><img src="./images/pro18.jpg" /><p>荣耀xSport运动蓝牙耳机</p><p class="price">¥229</p></a></li>
+							<li><a href="#"><img src="./images/pro19.jpg" /><p>华为智能体脂秤</p><p class="price">¥149</p></a></li>
+							<li><a href="#"><img src="./images/pro20.jpg" /><p>荣耀心晴耳机</p><p class="price">¥129</p></a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="category-info">
+					<div><a href="#">专属配件</a></div>
+					<a href="#">保护套</a>
+					<a href="#">保护壳</a>
+					<a href="#">贴膜</a>
+				</div>
+				<div class="category-panels">
+					<div class="sub-title"><a href="#"><span>浏览专属配件频道</span><span class="more">></span></a></div>
+					<div class="sub-lists">
+						<ul>
+							<li><a href="#">保护壳</a></li>
+							<li><a href="#">保护套</a></li>
+							<li><a href="#">贴膜</a></li>
+							<li><a href="#">盒子专属配件</a></li>
+							<li><a href="#">表带</a></li>
+							<li><a href="#">触控笔</a></li>
+						</ul>
+					</div>
+					<div class="sub-pro">
+						<ul>
+							<li><a href="#"><img src="./images/pro21.jpg" /><p>HUAWEI P20 Pro手机导航套件</p><p class="price">¥199</p></a></li>
+							<li><a href="#"><img src="./images/pro22.jpg" /><p>荣耀9 炫彩保护壳</p><p class="price">¥109</p></a></li>
+							<li><a href="#"><img src="./images/pro23.jpg" /><p title="HUAWEI Mate RS 保时捷设计 智能视窗皮套">HUAWEI Mate RS 保时捷设计</p><p class="price">¥1999</p></a></li>
+							<li><a href="#"><img src="./images/pro24.jpg" /><p>荣耀V10 PU磁吸保护套</p><p class="price">¥119</p></a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div><!-- 轮播图分类结束 -->
+<!-- 主要布局开始 -->
+<div class="home-main">
+	<div class="home-user-center">
+		<div class="uc1">
+			<div class="avatar">
+				<img src="./images/img_not_logged_in.png" width="100%" height="auto" />
+			</div>
+			<div class="welcome">
+				<div class="wel-login">欢迎来到华为商城，请 <a href="#">登录</a> 还没账号？ <a href="#">注册</a> 即可享受    ></div>
+				<div class="wel-btn"><a href="">新人福利</a><a href="">会员频道</a></div>
+			</div>
+		</div>
+		<div class="uc2">
+			<ul>
+				<li><a href="#"><div class="img img1"><img src="./images/icon.png" /></div>企业购</a></li>
+				<li><a href="#"><div class="img img2"><img src="./images/icon.png" /></div>依旧换新</a></li>
+				<li><a href="#"><div class="img img3"><img src="./images/icon.png" /></div>优选配件</a></li>
+				<li><a href="#"><div class="img img4"><img src="./images/icon.png" /></div>会员领券</a></li>
+				<li><a href="#"><div class="img img5"><img src="./images/icon.png" /></div>数码特惠</a></li>
+				<li><a href="#"><div class="img img6"><img src="./images/icon.png" /></div>手机充值</a></li>
+			</ul>
+		</div>
+		<div class="uc3">
+			<div class="notice">
+				<div class="notice-title">公告</div>
+				<div class="notice-content">
+					<ul id="notice-lists">
+						<li>助力nova新机-回收限时加价</li>
+						<li>HUAWEI nova3新机来袭 老用户……</li>
+						<li>华为暑“价”燥起来</li>
+					</ul>
+				</div>
+			</div>
+			<div class="uc3-other">
+				<a href="#"><span class="other-icon other-icon1"></span>优购码</a>
+				<a href="#"><span class="other-icon other-icon2"></span>实名认证</a>
+				<a href="#"><span class="other-icon other-icon3"></span>补购保障</a>
+			</div>
+		</div>
+	</div><!--用户登录布局结束-->
+	
+	<div class="home-ad-lists"><!-- 4图广告开始 -->
+		<ul>
+			<li><a href="#"><img src="./images/home-ad1.png" /></a></li>
+			<li><a href="#"><img src="./images/home-ad2.png" /></a></li>
+			<li><a href="#"><img src="./images/home-ad3.png" /></a></li>
+			<li><a href="#"><img src="./images/home-ad4.png" /></a></li>
+		</ul>
+	</div><!-- 4图广告结束 -->
+
+	<div class="hot-single"><!-- 热销单品开始-->
+		<h2>热销单品</h2>
+		<div class="hot-single-left">
+			<a href="#"><img src="./images/hot1.jpg" /></a>
+		</div>
+		<div class="hot-single-right">
+			<ul>
+				<li><a href="#"><img src="./images/hot2.jpg" /><p class="hot-title">荣耀10</p><p class="hot-desc">限时优惠100 赠精美配件</p><p class="hot-price">¥2599</p></a></li>
+				<li><a href="#"><img src="./images/hot3.jpg" /><p class="hot-title">HUAWEI P20</p><p class="hot-desc">限量送精美配件</p><p class="hot-price">¥3788</p></a></li>
+				<li><a href="#"><img src="./images/hot4.jpg" /><p class="hot-title">荣耀V10</p><p class="hot-desc">最高直降700元 享多重好礼</p><p class="hot-price">¥1999</p></a></li>
+				<li><a href="#"><img src="./images/hot5.jpg" /><p class="hot-title">HUAWEI Mate RS 保时捷设计</p><p class="hot-desc">限量典藏</p><p class="hot-price">¥9999</p></a></li>
+				<li><a href="#"><img src="./images/hot7.jpg" /><p class="hot-title">荣耀畅玩7X</p><p class="hot-desc">最高优惠320+高配尊享送耳机</p><p class="hot-price">¥1099</p></a></li>
+				<li><a href="#"><img src="./images/hot8.jpg" /><p class="hot-title">HUAWEI Mate 10 Pro</p><p class="hot-desc">限时优惠500+赠好礼</p><p class="hot-price">¥3999</p></a></li>
+				<li><a href="#"><img src="./images/hot9.jpg" /><p class="hot-title">荣耀9青春版</p><p class="hot-desc">最高优惠400+高配尊享送耳机</p><p class="hot-price">¥999</p></a></li>
+				<li><a href="#"><img src="./images/hot6.jpg" /><p class="hot-title">华为畅享8 Plus</p><p class="hot-desc">领券立减50+赠好礼</p><p class="hot-price">¥1899</p></a></li>
+			</ul>
+		</div>
+	</div><!-- 热销单品结束-->
+
+	<div class="home-recommend"><!-- 精品推荐开始-->
+		<h2>精品推荐</h2>
+		<div class="recomm-lists">
+			<ul>
+				<li><a href="#"><img src="./images/recommend1.jpg" /><p class="recomm-title">华为手环 B5</p><p class="recomm-desc">最高直降30元 </p><p class="recomm-price">暂无报价</p></a></li>
+				<li><a href="#"><img src="./images/recommend2.jpg" /><p class="recomm-title">荣耀手环3</p><p class="recomm-desc">直降200元！ </p><p class="recomm-price">￥139</p></a></li>
+				<li><a href="#"><img src="./images/recommend3.jpg" /><p class="recomm-title">华为畅享8</p><p class="recomm-desc">最高降100 加赠背包 </p><p class="recomm-price">￥1,099</p></a></li>
+				<li><a href="#"><img src="./images/recommend4.jpg" /><p class="recomm-title">荣耀MagicBook</p><p class="recomm-desc">可触控双耳蓝牙耳机 </p><p class="recomm-price">￥4,899</p></a></li>
+				<li><a href="#"><img src="./images/recommend5.jpg" /><p class="recomm-title">HUAWEI FreeBuds无线耳机</p><p class="recomm-desc">直降40元仅需129 </p><p class="recomm-price">￥799</p></a></li>
+				<li><a href="#"><img src="./images/recommend6.jpg" /><p class="recomm-title">荣耀智能体脂秤</p><p class="recomm-desc">8.4英寸2K屏开启高清视界 </p><p class="recomm-price">￥129</p></a></li>
+				<li><a href="#"><img src="./images/recommend7.jpg" /><p class="recomm-title">华为平板 M5 8.4英寸</p><p class="recomm-desc">最高优惠100 高配送耳机 </p><p class="recomm-price">￥2,088</p></a></li>
+				<li><a href="#"><img src="./images/recommend8.jpg" /><p class="recomm-title">荣耀畅玩7C</p><p class="recomm-desc">最高直降800 </p><p class="recomm-price">￥899</p></a></li>
+				<li><a href="#"><img src="./images/recommend9.jpg" /><p class="recomm-title">HUAWEI MateBook D</p><p class="recomm-desc">直降20元仅需129 </p><p class="recomm-price">￥3,788</p></a></li>
+				<li><a href="#"><img src="./images/recommend10.jpg" /><p class="recomm-title">荣耀畅玩手环 A2</p><p class="recomm-desc">是手环 也是耳机 </p><p class="recomm-price">￥129</p></a></li>
+				<li><a href="#"><img src="./images/recommend11.jpg" /><p class="recomm-title">华为手环B3 青春版</p><p class="recomm-desc">防水影音平板 </p><p class="recomm-price">￥499</p></a></li>
+				<li><a href="#"><img src="./images/recommend12.jpg" /><p class="recomm-title">荣耀WaterPlay</p><p class="recomm-desc">适配HUAWEI P20系列，Mate 10系列 </p><p class="recomm-price">￥1,599</p></a></li>
+				<li><a href="#"><img src="./images/recommend13.jpg" /><p class="recomm-title">HUAWEI VR 2</p><p class="recomm-desc">高清大屏 清晰护眼 </p><p class="recomm-price">￥1,999</p></a></li>
+				<li><a href="#"><img src="./images/recommend14.jpg" /><p class="recomm-title">荣耀畅玩平板2 9.6英寸</p><p class="recomm-desc"> </p><p class="recomm-price">￥969</p></a></li>
+				<li><a href="#"><img src="./images/recommend15.jpg" /><p class="recomm-title">华为6700mAh 移动电源</p><p class="recomm-desc">直降50元仅需199 </p><p class="recomm-price">￥69</p></a></li>
+				<li><a href="#"><img src="./images/recommend16.jpg" /><p class="recomm-title">荣耀xSport 运动蓝牙耳机</p><p class="recomm-desc">15.6英寸轻薄笔记本电脑 </p><p class="recomm-price">￥199</p></a></li>
+				<li><a href="#"><img src="./images/recommend17.jpg" /><p class="recomm-title">HUAWEI MateBook D（2018版）</p><p class="recomm-desc">持久续航 好玩不贵 </p><p class="recomm-price">￥5,188</p></a></li>
+				<li><a href="#"><img src="./images/recommend18.jpg" /><p class="recomm-title">荣耀平板2</p><p class="recomm-desc"> </p><p class="recomm-price">￥1,399</p></a></li>
+				<li><a href="#"><img src="./images/recommend19.jpg" /><p class="recomm-title">华为快充车载充电器</p><p class="recomm-desc">双网双通 双频优选 </p><p class="recomm-price">￥99</p></a></li>
+				<li><a href="#"><img src="./images/recommend20.jpg" /><p class="recomm-title">荣耀路由2</p><p class="recomm-desc">独立通话(eSIM技术) </p><p class="recomm-price">￥179</p></a></li>
+				<li><a href="#"><img src="./images/recommend21.jpg" /><p class="recomm-title">HUAWEI WATCH 2 Pro</p><p class="recomm-desc">支持5G信号智能优先选择 </p><p class="recomm-price">￥2,588</p></a></li>
+				<li><a href="#"><img src="./images/recommend22.jpg" /><p class="recomm-title">华为路由器WS5200</p><p class="recomm-desc">蓝牙通话 活动记录 智能提醒 </p><p class="recomm-price">￥269</p></a></li>
+				<li><a href="#"><img src="./images/recommend23.jpg" /><p class="recomm-title">华为手环B3 青春版</p><p class="recomm-desc">华为第二代智能运动手表 </p><p class="recomm-price">￥499</p></a></li>
+				<li><a href="#"><img src="./images/recommend24.jpg" /><p class="recomm-title">HUAWEI WATCH 2</p><p class="recomm-desc">2K高清屏幕 麒麟950 </p><p class="recomm-price">￥1,688</p></a></li>
+				<li><a href="#"><img src="./images/recommend25.jpg" /><p class="recomm-title">华为平板 M3</p><p class="recomm-desc">小巧精悍一个顶仨 </p><p class="recomm-price">￥1,888</p></a></li>
+				<li><a href="#"><img src="./images/recommend26.jpg" /><p class="recomm-title">荣耀多口充电器SuperCharge快充版</p><p class="recomm-desc">优选5G信号 WiFi自动加速 </p><p class="recomm-price">￥149</p></a></li>
+				<li><a href="#"><img src="./images/recommend27.jpg" /><p class="recomm-title">华为路由器 A1 畅享版</p><p class="recomm-desc">大容量 更持久 </p><p class="recomm-price">￥169</p></a></li>
+				<li><a href="#"><img src="./images/recommend28.jpg" /><p class="recomm-title">华为2万毫安移动电源</p><p class="recomm-desc">最高优惠320+高配尊享送耳机 </p><p class="recomm-price">￥249</p></a></li>
+				<li><a href="#"><img src="./images/recommend29.jpg" /><p class="recomm-title">荣耀畅玩7X</p><p class="recomm-desc">高配版减100+送耳机 </p><p class="recomm-price">￥1,099</p></a></li>
+				<li><a href="#"><img src="./images/recommend30.jpg" /><p class="recomm-title">荣耀畅玩7A</p><p class="recomm-desc"></p><p class="recomm-price">￥699</p></a></li>
+			</ul>
+			<div class="arrow">
+				<div class="arrow-left"><</div>
+				<div class="arrow-right">></div>
+			</div>
+		</div>
+	</div><!-- 精品推荐结束-->
+
+	<!-- 轮播图2 -->
+	<div class="banner2">
+		<ul>
+			<li><a href="#" target="_blank"><img src="./images/banner2-1.jpg" /></a></li>
+			<li><a href="#" target="_blank"><img src="./images/banner2-2.jpg" /></a></li>
+			<li><a href="#" target="_blank"><img src="./images/banner2-3.jpg" /></a></li>
+			<li><a href="#" target="_blank"><img src="./images/banner2-4.jpg" /></a></li>
+			<li><a href="#" target="_blank"><img src="./images/banner2-5.png" /></a></li>
+			<li><a href="#" target="_blank"><img src="./images/banner2-6.jpg" /></a></li>
+			<li><a href="#" target="_blank"><img src="./images/banner2-7.jpg" /></a></li>
+		</ul>
+		<div class="banner2-btn"></div>
+	</div><!-- 轮播图2结束 -->
+
+	<!-- 商品布局开始 -->
+	<div class="home-goods">
+		<div class="goods-channel goods-channel-one">
+			<div class="channel-title">
+				<h2>手机</h2>
+				<div class="channel-nav">
+					<ul>
+						<li><a href="#">荣耀</a></li>
+						<li><a href="#">HUAWEI P系列</a></li>
+						<li><a href="#">荣耀畅玩系列</a></li>
+						<li><a href="#">HUAWEI Mate系列</a></li>
+						<li><a href="#">HUAWEI nova系列</a></li>
+						<li><a href="#">HUAWEI 麦芒系列</a></li>
+						<li><a href="#">华为畅享系列</a></li>
+						<li><a href="#">移动4G+专区</a></li>
+					</ul>
+				</div>
+				<div class="channel-more"><a href="#">更多></a></div>
+			</div>
+			<ul class="goods-lists">
+				<li class="lists-first"><a href="#"><img src="./images/channel-1-1.jpg" alt=""></a></li>
+				<li><a href="#"><img src="./images/channel-1-2.jpg" alt=""><p class="recomm-title">HUAWEI Mate 10</p><p class="recomm-desc">限时优惠200+赠好礼</p><p class="recomm-price">¥3399</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-3.jpg" alt=""><p class="recomm-title">荣耀畅玩7C</p><p class="recomm-desc">优惠100 高配送耳机 </p><p class="recomm-price">¥899</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-4.jpg" alt=""><p class="recomm-title">华为畅享8</p><p class="recomm-desc">直降200元！</p><p class="recomm-price">¥1099</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-5.jpg" alt=""><p class="recomm-title">荣耀畅玩7A</p><p class="recomm-desc">优惠100 高配送耳机</p><p class="recomm-price">¥699</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-6.jpg" alt=""><p class="recomm-title">HUAWEI nova 2s</p><p class="recomm-desc">赠精美配件</p><p class="recomm-price">¥2599</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-7.jpg" alt=""><p class="recomm-title">荣耀畅玩6</p><p class="recomm-desc">荣耀高性价比手机</p><p class="recomm-price">¥599</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-8.jpg" alt=""><p class="recomm-title">华为畅享 8e 青春</p><p class="recomm-desc">赠配件礼包</p><p class="recomm-price">¥799</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-9.jpg" alt=""><p class="recomm-title">华为畅享8e</p><p class="recomm-desc">赠精美礼品</p><p class="recomm-price">¥999</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-10.jpg" alt=""><p class="recomm-title">麦芒6</p><p class="recomm-desc">5.9英寸全面屏</p><p class="recomm-price">¥2199</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-11.jpg" alt=""><p class="recomm-title">HUAWEI Mate 10 保时捷设计</p><p class="recomm-desc">赠豪华礼包+12期免息</p><p class="recomm-price">¥8999</p></a></li>
+				<li><a href="#"><img src="./images/channel-1-12.jpg" alt=""><p class="recomm-title">荣耀9</p><p class="recomm-desc">限时最高优惠500元</p><p class="recomm-price">¥1899</p></a></li>
+			</ul>
+		</div>
+		<div class="goods-channel goods-channel-two">
+			<div class="channel-title">
+				<h2>笔记本电脑</h2>
+				<div class="channel-nav">
+					<ul>
+						<li><a href="#">平板电脑</a></li>
+						<li><a href="#">笔记本电脑</a></li>
+						<li><a href="#">笔记本配件</a></li>
+					</ul>
+				</div>
+				<div class="channel-more"><a href="#">更多></a></div>
+			</div>
+			<ul class="goods-lists">
+				<li class="lists-first"><a href="#"><img src="./images/channel-2-1.png" alt=""></a></li>
+				<li><a href="#"><img src="./images/channel-2-2.jpg" alt=""><p class="recomm-title">HUAWEI MateBook X Pro</p><p class="recomm-desc">13.9英寸笔记本电脑</p><p class="recomm-price">￥8,688</p></a></li>
+				<li><a href="#"><img src="./images/channel-2-3.jpg" alt=""><p class="recomm-title">荣耀MagicBook 锐龙版</p><p class="recomm-desc">高性能金属轻薄本</p><p class="recomm-price">￥3,999</p></a></li>
+				<li><a href="#"><img src="./images/channel-2-4.jpg" alt=""><p class="recomm-title">HUAWEI MateBook D</p><p class="recomm-desc">15.6英寸笔记本电脑</p><p class="recomm-price">￥5,188</p></a></li>
+				<li><a href="#"><img src="./images/channel-2-5.jpg" alt=""><p class="recomm-title">HUAWEI MateBook X</p><p class="recomm-desc">尊享6期分期免息</p><p class="recomm-price">￥6,188</p></a></li>
+				<li><a href="#"><img src="./images/channel-2-6.jpg" alt=""><p class="recomm-title">HUAWEI MateBook E</p><p class="recomm-desc">时尚二合一笔记本电脑</p><p class="recomm-price">￥4,988</p></a></li>
+				<li><a href="#"><img src="./images/channel-2-7.jpg" alt=""><p class="recomm-title">荣耀MagicBook 星云紫</p><p class="recomm-desc">高颜值时尚轻薄本</p><p class="recomm-price">￥4,999</p></a></li>
+				<li><a href="#"><img src="./images/channel-2-8.jpg" alt=""><p class="recomm-title">HUAWEI MateBook D</p><p class="recomm-desc">15.6英寸轻薄窄边框笔记本电脑</p><p class="recomm-price">￥3,788</p></a></li>
+			</ul>
+		</div>
+		<div class="goods-channel goods-channel-three">
+			<div class="channel-title">
+				<h2>精品平板</h2>
+				<div class="channel-nav">
+					<ul>
+						<li><a href="#">平板电脑</a></li>
+						<li><a href="#">笔记本电脑</a></li>
+						<li><a href="#">笔记本配件</a></li>
+					</ul>
+				</div>
+				<div class="channel-more"><a href="#">更多></a></div>
+			</div>
+			<ul class="goods-lists">
+				<li class="lists-first"><a href="#"><img src="./images/channel-3-1.jpg" alt=""></a></li>
+				<li><a href="#"><img src="./images/channel-3-2.jpg" alt=""><p class="recomm-title">荣耀Waterplay</p><p class="recomm-desc">防水影音平板</p><p class="recomm-price">￥1,699</p></a></li>
+				<li><a href="#"><img src="./images/channel-3-3.jpg" alt=""><p class="recomm-title">华为平板 M3 青春版 10.1英寸</p><p class="recomm-desc">哈曼卡顿品质立体声</p><p class="recomm-price">￥1,899</p></a></li>
+				<li><a href="#"><img src="./images/channel-3-4.jpg" alt=""><p class="recomm-title">荣耀畅玩平板2 9.6英寸</p><p class="recomm-desc">护眼滤蓝光高清大屏</p><p class="recomm-price">￥1,199</p></a></li>
+				<li><a href="#"><img src="./images/channel-3-5.jpg" alt=""><p class="recomm-title">华为平板M3 青春版 8英寸</p><p class="recomm-desc">增强护眼功能</p><p class="recomm-price">￥1,399</p></a></li>
+				<li><a href="#"><img src="./images/channel-3-6.jpg" alt=""><p class="recomm-title">荣耀平板2</p><p class="recomm-desc">8英寸全高清IPS屏</p><p class="recomm-price">￥1,299</p></a></li>
+				<li><a href="#"><img src="./images/channel-3-7.jpg" alt=""><p class="recomm-title">华为平板 M5 10.8英寸</p><p class="recomm-desc">2K高清屏</p><p class="recomm-price">￥2,488</p></a></li>
+				<li><a href="#"><img src="./images/channel-3-1.jpg" alt=""><p class="recomm-title">荣耀畅玩平板2 8英寸</p><p class="recomm-desc">大电池长续航</p><p class="recomm-price">￥1,099</p></a></li>
+			</ul>
+		</div>
+		<div class="goods-channel goods-channel-four">
+			<div class="channel-title">
+				<h2>智能穿戴</h2>
+				<div class="channel-nav">
+					<ul>
+						<li><a href="#">手环</a></li>
+						<li><a href="#">手表</a></li>
+						<li><a href="#">VR</a></li>
+					</ul>
+				</div>
+				<div class="channel-more"><a href="#">更多></a></div>
+			</div>
+			<ul class="goods-lists">
+				<li class="lists-first"><a href="#"><img src="./images/channel-4-1.png" alt=""></a></li>
+				<li><a href="#"><img src="./images/channel-4-2.jpg" alt=""><p class="recomm-title">荣耀畅玩手环 A2</p><p class="recomm-desc">直降20元仅需129</p><p class="recomm-price">￥129</p></a></li>
+				<li><a href="#"><img src="./images/channel-4-3.jpg" alt=""><p class="recomm-title">HUAWEI WATCH 2 Pro</p><p class="recomm-desc">eSIM一号双终端</p><p class="recomm-price">￥2,588</p></a></li>
+				<li><a href="#"><img src="./images/channel-4-4.jpg" alt=""><p class="recomm-title">荣耀手环3</p><p class="recomm-desc">50米防水心率手环</p><p class="recomm-price">￥149</p></a></li>
+				<li><a href="#"><img src="./images/channel-4-5.jpg" alt=""><p class="recomm-title">HUAWEI WATCH 2</p><p class="recomm-desc">独立通话  移动支付</p><p class="recomm-price">￥1,688</p></a></li>
+				<li><a href="#"><img src="./images/channel-4-6.jpg" alt=""><p class="recomm-title">华为运动手环</p><p class="recomm-desc">50米防水游泳</p><p class="recomm-price">￥298</p></a></li>
+				<li><a href="#"><img src="./images/channel-4-7.png" alt=""><p class="recomm-title">荣耀手表 S1</p><p class="recomm-desc">心率监测 游泳防水</p><p class="recomm-price">￥549</p></a></li>
+				<li><a href="#"><img src="./images/channel-4-8.jpg" alt=""><p class="recomm-title">华为手环B3 青春版</p><p class="recomm-desc">是手环 也是耳机</p><p class="recomm-price">￥499</p></a></li>
+			</ul>
+		</div>
+	</div><!-- 商品布局结束 -->
+	<div class="ad"><img src="./images/ad.jpg" /></div>
+	<div class="slogan">
+		<ul>
+			<li><a href="#"><i class="s1"></i>百强企业 品质保证</a></li>
+			<li><a href="#"><i class="s2"></i>7天退货 15天换货</a></li>
+			<li><a href="#"><i class="s3"></i>48元起免运费</a></li>
+			<li><a href="#"><i class="s4"></i>448家维修网点 全国联保</a></li>
+		</ul>
+	</div>
+	<div class="service">
+		<div class="service-l">
+			<ul>
+				<h3>购物相关</h3>
+				<li><a href="#">购物指南</a></li>
+				<li><a href="#">配送方式</a></li>
+				<li><a href="#">支付方式</a></li>
+				<li><a href="#">常见问题</a></li>
+			</ul>
+			<ul>
+				<h3>保修与退换货</h3>
+				<li><a href="#">保修政策</a></li>
+				<li><a href="#">退换货政策</a></li>
+				<li><a href="#">退换货流程</a></li>
+				<li><a href="#">保修状态查询</a></li>
+			</ul>
+			<ul>
+				<h3>维修与技术支持</h3>
+				<li><a href="#">售后网点</a></li>
+				<li><a href="#">预约维修</a></li>
+				<li><a href="#">手机寄修</a></li>
+				<li><a href="#">备件价格查询</a></li>
+				<li><a href="#">上门服务</a></li>
+			</ul>
+			<ul>
+				<h3>关于我们</h3>
+				<li><a href="#">公司介绍</a></li>
+				<li><a href="#">华为商城简介</a></li>
+				<li><a href="#">华为线下门店</a></li>
+				<li><a href="#">荣耀线下门店</a></li>
+				<li><a href="#">诚征英才</a></li>
+			</ul>
+			<ul>
+				<h3>关注我们</h3>
+				<li><a href="#">新浪微博</a></li>
+				<li><a href="#">腾讯微博</a></li>
+				<li><a href="#">花粉俱乐部</a></li>
+			</ul>
+		</div>
+		<div class="service-r">
+			<p class="phone">400-088-6888</p>
+			<p>24小时客服热线（仅收市话费）</p>
+			<p><a href="#"><i></i>在线客服</a></p>
+		</div>
+	</div>
+</div><!-- 主要布局结束 -->
+<footer>
+	<div class="s1"><img src="./images/flogo.png" /></div>
+	<div class="s2">
+		<a href="#">隐私声明</a>&nbsp;&nbsp;<a href="#">服务协议</a>&nbsp;&nbsp;Copyright © 2012-2018 华为软件技术有限公司 版权所有&nbsp;&nbsp;保留一切权利<br />公安备案	<a href="#">苏公网安备32011402010009号</a>&nbsp;&nbsp;| &nbsp;&nbsp;<a href="#">苏ICP备17040376号-6</a>&nbsp;&nbsp;|&nbsp;&nbsp;增值电信业务经营许可证：苏B2-20130048号
+	</div>
+	<div class="s3">
+		<a href="#"><img src="https://res.vmallres.com/pimages//sale/2018-05/20180522101715775.jpg"/></a>
+		<a href="#"><img src="https://res.vmallres.com/pimages//template/content/2016/20160226162415360.png" /></a>
+		<a href="#"><img src="https://res.vmallres.com/pimages//template/content/2016/20160226162521265.png" /></a>
+		<a href="#"><img src="https://res.vmallres.com/pimages//sale/2018-06/20180626164548324.png" /></a>
+		<a href="#"><img src="https://res.vmallres.com/pimages//sale/2018-06/20180626164548324.png" /></a>
+	</div>
+</footer>
+<div class="gotop">
+	<div class="gotop-btn"><i></i></div>
+	<div class="help">
+		<a href="#"><i></i><span>客服中心</span></a>
+		<a href="#"><i></i><span>意见反馈</span></a>
+		<a href="#"><i></i><span>帮助中心</span></a>
+	</div>
+</div>
+<script type="text/javascript" src="./javascript.js"></script>
+</body>
+</html>

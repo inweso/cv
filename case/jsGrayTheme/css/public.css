@@ -1,0 +1,11 @@
+/*公共样式样式*/
+.center{
+	margin:0 auto;
+	width:90%;
+	max-width:1140px;
+}
+.clear::after{
+	content:"";
+	display:block;
+	clear:both;
+}

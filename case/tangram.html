@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<title>七巧板</title>
+	<link rel="stylesheet"  type="text/css" href="./tangram.css"/>
+	<script src="./tangram.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="main">
+	<h3>七巧板</h3>
+	<div class="control">
+		<input id="num" type="text" placeholder="输入你要操作的图案序号"  />
+		<input id="up" type="button" value="Up" onclick="upDown(-1)" />
+		<input id="down" type="button" value="Down" onclick="upDown(1)" />
+		<input id="left" type="button" value="Left" onclick="leftRight(-1)" />
+		<input id="right" type="button" value="Right" onclick="leftRight(1)" />
+		<input id="angle" type="text" placeholder="输入你要旋转的角度" />
+		<input id="rotate" type="button" value="确定旋转" onclick="rotate()" />
+
+	</div>
+	<div class="box">
+		<div id="div2" class="trilateral-big-1"><span>2</span></div>
+		<div id="div1" class="trilateral-big-2"><span>1</span></div>
+		<div id="div4" class="trilateral-middle"><span>4</span></div>
+		<div id="div5" class="trilateral-small-1"><span>5</span></div>
+		<div id="div7" class="trilateral-small-2"><span>7</span></div>
+		<div id="div6" class="square">
+			<span>6</span>
+			<div class="square-trilateral-top"></div>
+			<div class="square-trilateral-bottom"></div>
+		</div>
+		<div id="div3" class="parallelogram">
+			<span>3</span>
+			<div class="parallelogram-trilateral-1"></div>
+			<div class="parallelogram-square"></div>
+			<div class="parallelogram-trilateral-2"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

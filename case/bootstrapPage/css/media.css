@@ -1,0 +1,104 @@
+@media screen and (max-width:768px) {
+	nav{
+		height:120px;
+	}
+	.menu{
+		height:60px;
+		float:none;
+	}
+	.recommend .item-name{
+		height:50px;
+	}
+	.recommend .item-name h3 {
+		padding: 15px 0 0;
+	}
+	.recommend, .sort{
+		height:auto;
+	}
+	.item-info div:nth-child(3){
+		border-right:none;
+	}
+	.start{
+		margin:10px auto 0;
+	}
+	.progress{
+		margin:15px auto 8px;
+	}
+	.item-content{
+		height:315px;
+	}
+	.mobile-QRcode{
+		float:none;
+	}
+	.item-name{
+		height:100px;
+	}
+	.sort h3, .medium h3 {
+		padding-top: 12px;
+	}
+	.link{
+		margin-top:0;
+	}
+	.list-sub{
+		border-right:none;
+		border-bottom:2px dashed #dd3137;
+		margin-top:10px;
+	}
+	.partner{
+		clear:both;
+		margin-top:190px; 
+		padding-top:10px;
+		border-top:1px dashed #CCC;
+	}
+	.partner ul{
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width:414px) {
+	.banner .item{
+		height:180px;
+	}
+	.item-content{
+		padding-top:10px;
+		height:330px;
+	}
+	.news-info{
+		padding-top:10px;
+		height:360px;
+	}
+	.news-info img{
+		width:86px;
+	}
+	.news-top li a{
+		display:inline-block;
+		width:85%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.news-top{
+		height:340px;
+	}
+	.tel,.help{
+		float:none;
+	}
+	.help{
+		margin-top:20px;
+	}
+	.partner{
+		margin-top:0;
+	}
+	.foot-menu , .foot-menu + p{
+		padding:0 10px;
+	}
+}
+
+@media screen and (max-width:375px){
+	.news-info{
+		height:390px;
+	}
+	.news-info ul li{
+		height:130px;
+	}
+}

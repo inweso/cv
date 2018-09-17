@@ -1,0 +1,159 @@
+	/*
+	红：#FF6666
+	橙：#FF9966
+	黄：#FFCC33
+	绿：#669933
+	蓝：#99CCCC
+	紫：#CCCCFF
+	棕：#CC9966
+	盒子：长宽：600px
+	两个大三角：高300px，两边边框：300px
+	*/
+
+	.main{
+		max-width:99%;
+		margin:60px auto;
+	}
+	.control{
+		margin-bottom:60px;
+	}
+	.box{
+		width:600px;
+		height:600px;
+		margin:0 auto;
+		border:1px dashed #000;
+		position:relative;
+	}
+	.trilateral-big-1{
+		position:absolute;
+		top:0;
+		left:0;
+		width:0;
+		border-top:300px solid #FF6666;
+		border-left:300px solid transparent;
+		border-right:300px solid transparent;
+	}
+	.trilateral-big-2{
+		position:absolute;
+		top:0;
+		left:0;
+		width:0;
+		border-left:300px solid #FF9966;
+		border-top:300px solid transparent;
+		border-bottom:300px solid transparent;
+	}
+	.trilateral-middle{
+		position:absolute;
+		bottom:0;
+		right:0;
+		width:0;
+		border-width:150px;
+		border-style:solid;
+		border-color:transparent #FFCC33 #FFCC33 transparent;
+	}
+	.trilateral-small-1{
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:0;
+		border-bottom:150px solid #669933;
+		border-left:150px solid transparent;
+		border-right:150px solid transparent;
+	}
+	.trilateral-small-2{
+		position:absolute;
+		right:150px;
+		top:150px;
+		width:0;
+		border-right:150px solid #99CC99;
+		border-top:150px solid transparent;
+		border-bottom:150px solid transparent;
+	}
+	.square{
+		position:absolute;
+		top:450px;
+		left:150px;
+	}
+	.square-trilateral-top{
+		position:absolute;
+		top:-150px;
+		left:0;
+		width:0;
+		border-bottom:150px solid #CCCCFF;
+		border-left:150px solid transparent;
+		border-right:150px solid transparent;
+	}
+	.square-trilateral-bottom{
+		position:absolute;
+		top:0;
+		left:0;
+		width:0;
+		border-top:150px solid #CCCCFF;
+		border-left:150px solid transparent;
+		border-right:150px solid transparent;
+	}
+	.parallelogram{
+		position:absolute;
+		top:0;
+		right:0;
+	}
+	.parallelogram-trilateral-1{
+		position:absolute;
+		top:0;
+		right:0;
+		width:0;
+		border-width:75px;
+		border-style:solid;
+		border-color:transparent #CC9966 #CC9966 transparent;
+	}
+	.parallelogram-square{
+		position:absolute;
+		top:150px;
+		right:0;
+		width:0;
+		position:absolute;
+		width:150px;
+		height:150px;
+		background:#CC9966;
+	}
+	.parallelogram-trilateral-2{
+		position:absolute;
+		top:300px;
+		right:0;
+		width:0;
+		border-width:75px;
+		border-style:solid;
+		border-color:#CC9966 transparent transparent #CC9966;
+	}
+	.box span{
+		position:absolute;
+		z-index:999;
+	}
+	.trilateral-big-1 span{
+		top:-150px;
+		left:0;
+	}
+	.trilateral-big-2 span{
+		top:0;
+		left:-150px;
+	}
+	.trilateral-middle span{
+		top:40px;
+		left:60px;
+	}
+	.trilateral-small-1 span{
+		top:75px;
+		left:0;
+	}
+	.trilateral-small-2 span{
+		top:0;
+		left:75px;
+	}
+	.square span{
+		top:0;
+		left:150px;
+	}
+	.parallelogram span{
+		top:200px;
+		left:-75px;
+	}

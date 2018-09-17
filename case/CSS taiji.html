@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>纯CSS实现太极阴阳图案，学到黑白分明的背景填充</title>
+	<style type="text/css">
+		body{
+			background:#CCC;
+		}
+		.taiji{
+			width:300px;
+			height:300px;
+			border-radius: 50%;
+			background: linear-gradient(black 50%, white 50%);
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-top:-150px;
+			margin-left:-150px;
+			transition: transform 2s;
+			-moz-transition: transform 2s; /* Firefox 4 */
+			-webkit-transition: transform 2s; /* Safari 和 Chrome */
+			-o-transition: transform 2s; /* Opera */
+		}
+		.taiji:hover{
+			transform:rotate(180deg);
+		}
+		.taiji:before{
+			content:"";
+			background:black;
+			width:50px;
+			height:50px;
+			border:50px solid white;
+			border-radius:50%;
+			display:block;
+			position:absolute;
+			left:0;
+			top:50%;
+			margin-top:-75px;
+		}
+		.taiji:after{
+			content:"";
+			background:white;
+			width:50px;
+			height:50px;
+			border:50px solid black;
+			border-radius:50%;
+			display:block;
+			position:absolute;
+			right:0;
+			top:50%;
+			margin-top:-75px;
+		}
+	</style>
+</head>
+<body>
+	<div class="taiji">
+		<div class="yin"></div>
+		<div class="yang"></div>
+	</div>
+</body>
+</html>

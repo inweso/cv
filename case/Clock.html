@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<meta name="UI" content="https://dribbble.com/shots/1544960-Smartisan-Clock" />
+	<meta name="source" content="https://oneleven.github.io/products/CSS&JS%E6%97%B6%E9%92%9F/index.html" />
+	<title>纯 CSS + JS 动态时钟</title>
+	<style type="text/css">
+		body{
+			background:radial-gradient(circle,#C7C1BE,#D8D3D1);
+		}
+		.clock{
+			background:radial-gradient(circle,#F8F8F8,#E8E8E8);
+			width:300px;
+			height:300px;
+			position:absolute;
+			left:50%;
+			margin-left:-150px;
+			top:50%;
+			margin-top:-150px;
+			border-radius:75px;
+			box-shadow:0 20px 30px #666;
+			border:1px double transparent;
+		}
+		.plate{
+			background:radial-gradient(circle,#666,#3A3A3A);
+			width:260px;
+			height:260px;
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-left:-130px;
+			margin-top:-130px;
+			border-radius:100%;
+		}
+		.hour{
+			width:3px;
+			border-bottom:70px solid #FFF;
+			border-left:5px solid transparent;
+			border-right:5px solid transparent;
+			border-radius:5px;
+			position:absolute;
+			left:50%;
+			margin-left:-6.5px;
+			top:50%;
+			margin-top:-55px;
+			transform-origin:50% 55px;
+			transform:rotate(315deg);
+		}
+		.minute{
+			width:2px;
+			border-bottom:90px solid #FFF;
+			border-left:5px solid transparent;
+			border-right:5px solid transparent;
+			border-radius:5px;
+			position:absolute;
+			left:50%;
+			margin-left:-6px;
+			top:50%;
+			margin-top:-75px;
+			transform-origin:50% 75px;
+			transform:rotate(45deg);
+		}
+		.second{
+			width:1.5px;
+			border-bottom:110px solid #C8453D;
+			border-left:2px solid transparent;
+			border-right:2px solid transparent;
+			border-radius:5.25px;
+			position:absolute;
+			left:50%;
+			margin-left:-2.5px;
+			top:50%;
+			margin-top:-85px;
+			transform-origin:50% 85px;
+			transform:rotate(180deg);
+		}
+		.point{
+			width:8px;
+			height:8px;
+			background:#5C3735;
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-top:-4px;
+			margin-left:-4px;
+			border-radius:100%;
+		}
+		.num{
+			color:#FFF;
+			font-size:25px;
+		}
+		.num-12{
+			position:absolute;
+			top:6px;
+			left:115px;
+		}
+		.num-3{
+			position:absolute;
+			right:6px;
+			top:115px;
+		}
+		.num-6{
+			position:absolute;
+			bottom:6px;
+			left:124px;
+		}
+		.num-9{
+			position:absolute;
+			left:6px;
+			top:115px;
+		}
+	</style>
+</head>
+<body>
+	<div class="clock">
+		<div class="plate">
+			<div class="hour"></div>
+			<div class="minute"></div>
+			<div class="second"></div>
+			<div class="point"></div>
+			<div class="num">
+				<div class="num-12">12</div>
+				<div class="num-3">3</div>
+				<div class="num-6">6</div>
+				<div class="num-9">9</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function clock(){
+			var time = new Date();
+			var hour = time.getHours();
+			var minute = time.getMinutes();
+			var second = time.getSeconds();
+			//console.log(hour + ":" + minute + ":" + second);
+
+			if( hour > 12 ){//12小时制
+				hour -= 12;
+			}
+
+			//原计算方式复杂，弃用）
+			//var secondDeg = second / 60 * 360;
+			//var minuteDeg = (minute + second /60) / 60 * 360;
+			//var hourDeg = (hour + minute / 60 + second / 3600) / 12 *360;
+
+			/*分解三针角度
+			秒针角度：一分钟有60秒，360/60，每秒6度
+			分针角度：一小时有60分钟，每分钟有60秒，一共3600秒，3600/360，每10秒1度。
+			时针角度：一圈12小时， 分60格，每小时5格，每格6度，每小时占30度（360/12）。
+			12小时共43200秒，43200/360=120，也就是120秒1度；
+			12小时共720分钟，720/360=2，也就是2分钟1度。
+			*/
+
+			//优化后的计算方式
+			var secondDeg = second * 6;//当前秒数除以6得出秒针角度。
+			var minuteDeg = (minute * 60 + second) / 10;//当前分数换算成秒数加上当前秒数除以10得出分针角度。
+			var hourDeg = hour * 30 + minute / 2;//当前“时数”乘以“每小时所占度数（30）”得出当前时数角度，加上分针已走分数的角度，得出时针角度。
+
+			document.querySelector(".second").style.transform = `rotate(${secondDeg}deg)`;//相当于："rotate(" + secondDeg + "deg)"
+			document.querySelector(".minute").style.transform = `rotate(${minuteDeg}deg)`;
+			document.querySelector(".hour").style.transform = `rotate(${hourDeg}deg)`;
+			/*ES6新知识点：反单引号。
+			参考文档1：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/template_strings
+			参考文档2：http://es6.ruanyifeng.com/#docs/string#%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2
+
+			模板字面量，允许嵌入表达式的字符串字面量，可以使用多行字符串和字符串插值功能。
+			
+			可以嵌入变量、表达式、函数：${expression}
+			
+			使用多行字符串：
+			console.log("string text line 1\n\
+			string text line 2");
+
+			*/
+
+		}
+		clock();
+		setInterval(
+			function () {
+				clock()
+			},1000
+		);
+	</script>
+</body>
+</html>
