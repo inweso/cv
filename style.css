@@ -131,10 +131,6 @@ header{
 	width:124px;
 	height:124px;
 	border-radius:50%;
-	border-left:3px solid #666699;
-	border-top:3px solid #FFCC99;
-	border-right:3px solid #666699;
-	border-bottom:3px solid #FFCC99;
 	transition:transform 1s ease-in-out;
 }
 .logo img{
