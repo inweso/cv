@@ -1,0 +1,17 @@
+<!--pages/join/join.wxml-->
+<view class="join">
+  <view class="content">
+    <view class="title">加入我们</view>
+    <text>我们是一家由信仰“不将就”的人组成的公司。来自 18 个国家的员工，因热爱而聚在一起。我们年轻，心怀远大，满腹激情与活力。我们酷爱一切精致，愿为美好喝彩，致力与世界分享品质科技。</text>
+    <view class="title">这是 OnePlus 的 DNA，也是我们的信仰。</view>
+    <text>OnePlus 吸引你的，或许不只是多元化的团队，扁平的管理，开放的氛围和广阔的前景......\n如果你也认同这些信仰，那就来吧，一起谱写新的故事</text>
+    <view class="title">薪酬与福利，极具竞争力</view>
+    <text>优厚的薪酬与福利，是你追梦路上的坚强后盾，为你扫除后顾之忧。</text>
+		<view class="title">联系我们</view>
+    <text>电话：020-88888888\n地址：中国-广东省-广州-天河</text>
+  </view>
+  <view class="footer">
+		<button>微信咨询</button>
+		<button bindtap="PhoneCall">电话咨询</button>
+	</view>
+</view>

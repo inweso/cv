@@ -1,0 +1,4 @@
+<view class="like-btn" bindtap="likeit">
+	<image src="{{like?'../images/like.png':'../images/like-dis.png'}}"></image>
+	<text>{{ count }}</text>
+</view>

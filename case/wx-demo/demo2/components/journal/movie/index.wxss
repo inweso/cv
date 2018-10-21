@@ -1,0 +1,22 @@
+.movie{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.movie-cover{
+	width:750rpx;
+	height:500rpx;
+}
+.movie-title{
+	position:relative;
+	top:-60rpx;
+	left:-300rpx;
+	width:46rpx;
+	height:142rpx;
+}
+.movie-text{
+	padding:0 90rpx;
+	color:#666;
+	font-size:36rpx;
+	text-align:center;
+}

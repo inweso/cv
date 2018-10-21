@@ -1,0 +1,5 @@
+<view class="nav">
+	<image bindtap="onLeft" class="previous" src="{{latest?'../images/previous-dis.png':'../images/previous.png'}}"></image>
+	<text class="title">{{title}}</text>
+	<image bindtap="onRight" class="next" src="{{first?'../images/next-dis.png':'../images/next.png'}}"></image>
+</view>

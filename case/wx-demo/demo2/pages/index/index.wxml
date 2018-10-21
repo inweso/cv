@@ -1,0 +1,11 @@
+<view class="top">
+	<v-episode index="{{data.index}}"></v-episode>
+	<v-like bindlike="onlike" count="{{data.fav_num}}" like="{{data.like_status}}"></v-like><!--通过组件的properties属性接收页面的数据-->
+</view>
+<view class="cover">
+	<v-movie wx:if="{{data.type==100}}" imageUrl="{{data.images}}" content="{{data.content}}"></v-movie>
+	<v-music wx:if="{{data.type==200}}" imageUrl="{{data.images}}" content="{{data.content}}"></v-music>
+	<v-essay wx:if="{{data.type==300}}" imageUrl="{{data.images}}" content="{{data.content}}"></v-essay>
+</view>
+
+<v-nav bindleft="onPrevious" bindright="onNext" title="{{data.title}}" first="{{first}}" latest="{{latest}}"></v-nav>

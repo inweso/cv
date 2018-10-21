@@ -1,0 +1,22 @@
+.episode{
+	color:#333;
+	font-size:28rpx;
+	display: flex;
+}
+.number{
+	margin-left:10rpx;
+	padding-top:20rpx;
+}
+.line,
+.index{
+	font-size:48rpx;
+}
+.line{
+	margin:0 6rpx;
+}
+.date{
+	vertical-align: bottom;
+	display: flex;
+	flex-direction: column;
+	font-size: 24rpx;
+}

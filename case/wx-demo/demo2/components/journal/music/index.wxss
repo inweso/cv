@@ -1,0 +1,36 @@
+.music{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.player{
+	position: relative;
+}
+.music-cover{
+	width:500rpx;
+	height:500rpx;
+	border-radius: 50%;
+}
+.music-title{
+	position:relative;
+	top:-60rpx;
+	left:-300rpx;
+	width:44rpx;
+	height:127rpx;
+}
+.music-text{
+	padding:0 90rpx;
+	color:#666;
+	font-size:36rpx;
+	text-align:center;
+}
+.play,
+.pause{
+	position:absolute;
+	width:120rpx;
+	height:120rpx;
+	border-radius: 50%;
+	top:50%;
+	left:50%;
+	transform: translate3d(-50%,-50%,0);
+}
