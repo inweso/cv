@@ -1,8 +1,8 @@
 /*
 Theme Name: JS-CV
-Author: 水秋玄
+Author: 张少佳
 Author wechat: 124711255
-Author Mail: layso@qq.com
+Author Mail: im@mkinit.com
 
 黑色：#69646B
 紫色：#666699
@@ -45,7 +45,7 @@ html,body{
 	padding:0;
 }
 body{
-	font:16px/1.6 "Microsoft Yahei" , sans-serif , Arial, Tahoma , Helvetica , SimSun;
+	font:15px/1.6 "Microsoft Yahei" , sans-serif , Arial, Tahoma , Helvetica , SimSun;
 	color:#69646B;
 	background: url(./images/bg.jpg) repeat;
 }
@@ -194,7 +194,7 @@ section:hover .close-button{
 }
 .left section:nth-child(1),
 .right section:nth-child(1){
-	min-height: 166px;
+	min-height: 140px;
 }
 .left section:nth-child(2),
 .right section:nth-child(2){
@@ -351,16 +351,16 @@ footer p{
 	top:112px;
 }
 .point-three{
-	top:265px;
+	top:240px;
 }
 .point-four{
-	top:309px;
+	top:285px;
 }
 .point-five{
-	top:488px;
+	top:512px;
 }
 .point-six{
-	top:530px;
+	top:555px;
 }
 
 /*遮罩*/

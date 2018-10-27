@@ -15,7 +15,7 @@ $(document).ready(function(){
 	});
 
 	//背景轮播
-	function slide(id,child){
+	/*function slide(id,child){
 		var box = document.getElementById(id);
 		var lists = box.getElementsByTagName(child);
 		var lists_num = 0;
@@ -30,5 +30,5 @@ $(document).ready(function(){
 			lists[lists_num].className = "bg-show";
 		},3000);
 	}
-	setTimeout(slide("bg","li"),3000);
+	setTimeout(slide("bg","li"),3000);*/
 });
