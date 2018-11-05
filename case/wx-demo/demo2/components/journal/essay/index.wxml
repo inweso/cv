@@ -1,5 +1,0 @@
-<view class="essay">
-	<image class="essay-cover" src="{{imageUrl}}"></image>
-	<image class="essay-title" src="{{essayTitleImg}}"></image>
-	<text class="essay-text">{{content}}</text>
-</view>

@@ -1,5 +1,0 @@
-<view class="movie">
-	<image class="movie-cover" src="{{imageUrl}}"></image>
-	<image class="movie-title" src="{{movieTitleImg}}"></image>
-	<text class="movie-text">{{content}}</text>
-</view>
