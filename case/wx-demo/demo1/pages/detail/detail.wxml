@@ -1,4 +1,0 @@
-<!--pages/detail/detail.wxml-->
-<text>详情页</text>
-<text>{{currentDetail.content}}</text>
-<button bindtap="goback">返回</button>
